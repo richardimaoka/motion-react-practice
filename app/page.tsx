@@ -9,10 +9,8 @@ export default function Page() {
     borderRadius: 5,
   };
   return (
-    <motion.div
-      style={box}
-      animate={{ rotate: 360 }}
-      transition={{ duration: 1 }}
-    />
+    <motion.button initial={{ scale: 0 }} animate={{ scale: 1 }}>
+      button
+    </motion.button>
   );
 }
